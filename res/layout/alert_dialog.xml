@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchWidth"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/logo_img"
+        style="@style/Wrap"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/logo" 
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/dialog_title"
+        style="@style/Wrap"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/input_textsize_m"/>
+
+    <EditText
+        android:id="@+id/input_txt1"
+        style="@style/MatchWidth"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/app_bg"
+        android:drawableLeft="@drawable/phone_icon"
+        android:drawablePadding="20dp"
+        android:ellipsize="end"
+        android:inputType="number"
+        android:padding="10dp"
+        android:password="true"
+        android:singleLine="true"
+        android:text="Text"
+        android:textColor="@color/text_input"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/input_txt2"
+        style="@style/MatchWidth"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/app_bg"
+        android:drawableLeft="@drawable/phone_icon"
+        android:drawablePadding="20dp"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:text="Text"
+        android:textColor="@color/text_input"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/only_ok_btn"
+        style="@style/MatchWidth"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/ok_button"
+        android:padding="5dp"
+        android:text="@string/ok"
+        android:textColor="@color/white"
+        android:textSize="@dimen/input_textsize_m"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/btn_linlayout"
+        style="@style/MatchWidth"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:weightSum="1" >
+
+        <Button
+            android:id="@+id/ok_btn"
+            style="@style/dialogbtn_style_m"
+            android:layout_marginRight="3dp"
+            android:textStyle="normal"
+            android:text="@string/ok" />
+
+        <Button
+            android:id="@+id/cancel_btn"
+            style="@style/dialogbtn_style_m"
+            android:layout_marginLeft="3dp"
+             android:textStyle="normal"
+            android:text="@string/cancel" />
+    </LinearLayout>
+
+</LinearLayout>

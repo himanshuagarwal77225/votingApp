@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Match" >
+
+    <ImageView
+        android:id="@+id/img_logo"
+        style="@style/Wrap"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/logo_margin"
+        android:src="@drawable/logo" />
+
+    <ScrollView
+        style="@style/MatchWidth"
+        android:layout_below="@id/img_logo"
+        android:layout_centerInParent="true"
+        android:layout_margin="15dp" >
+
+        <LinearLayout
+            style="@style/MatchWidth"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/input_firstname"
+                style="@style/LargeEditText"
+                android:imeOptions="actionNext" />
+            
+             <EditText
+                android:id="@+id/input_lastname"
+                style="@style/LargeEditText"
+                android:imeOptions="actionNext" />
+
+            <EditText
+                android:id="@+id/input_email"
+                style="@style/LargeEditText"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress" />
+            
+            <EditText
+                android:id="@+id/input_password"
+                style="@style/LargeEditText"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/input_dob"
+                style="@style/LargeEditText"
+                android:imeOptions="actionNext"
+                android:inputType="date" />
+
+            <RadioGroup
+                android:id="@+id/radio_group1"
+                style="@style/MatchWidth"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rd_male"
+                    style="@style/Wrap"
+                    android:layout_marginRight="10dp"
+                    android:background="@android:color/transparent"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/radio_btn_selector"
+                    android:drawablePadding="5dip"
+                    android:text="@string/male"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/input_textsize_m"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/rd_female"
+                    style="@style/Wrap"
+                    android:background="@android:color/transparent"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/radio_btn_selector"
+                    android:drawablePadding="5dip"
+                    android:text="@string/female"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/input_textsize_m"
+                    android:textStyle="bold" />
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/input_mobile"
+                style="@style/LargeEditText"
+                android:imeOptions="actionNext"
+                android:inputType="phone" />
+
+            <EditText
+                android:id="@+id/input_voterid"
+                style="@style/LargeEditText"
+                android:imeOptions="actionNext" />
+
+            <EditText
+                android:id="@+id/input_pan"
+                style="@style/LargeEditText"
+                android:imeOptions="actionDone" />
+
+            <TextView
+                android:id="@+id/submit"
+                style="@style/Wrap"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/btn_bg"
+                android:gravity="center"
+                android:text="@string/submit"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

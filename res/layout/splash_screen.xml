@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    android:id="@+id/main_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Match" >
+
+    <ImageView
+        android:id="@+id/img_footerlogo"
+        style="@style/MatchWidth"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/logo_mxo2" />
+
+    <ImageView
+        android:id="@+id/img_bottom"
+        style="@style/MatchWidth"
+        android:layout_above="@id/img_footerlogo"
+        android:src="@drawable/footer_img" />
+
+    <ImageView
+        android:id="@+id/img_toplogo"
+        style="@style/MatchWidth"
+        android:layout_above="@id/img_bottom"
+        android:layout_alignParentTop="true"
+        android:layout_margin="30dp"
+        android:src="@drawable/logo" />
+
+</RelativeLayout>

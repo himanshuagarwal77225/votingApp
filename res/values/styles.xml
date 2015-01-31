@@ -1,0 +1,172 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:windowBackground">@color/app_bg<!-- @drawable/bg --></item>
+    </style>
+
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="Match">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+
+    <style name="Wrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="MatchHeight" parent="Match">
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="MatchWidth" parent="Match">
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="WeightWidth" parent="Wrap">
+        <item name="android:layout_width">0dp</item>
+    </style>
+
+    <style name="WeightHeight" parent="Wrap">
+        <item name="android:layout_height">0dp</item>
+    </style>
+
+    <style name="WeightFillWidth" parent="Match">
+        <item name="android:layout_height">0dp</item>
+    </style>
+
+    <style name="WeightFillHeight" parent="Match">
+        <item name="android:layout_width">0dp</item>
+    </style>
+
+    <style name="dialogbtn_style" parent="WeightFillHeight">
+        <item name="android:layout_weight">0.5</item>
+        <item name="android:background">@drawable/ok_button</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="dialogbtn_style_m" parent="dialogbtn_style">
+        <item name="android:textSize">@dimen/input_textsize_m</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <style name="dialogbtn_style_l" parent="dialogbtn_style">
+        <item name="android:textSize">@dimen/input_textsize_l</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <!-- style for listview row layout textviews -->
+    <style name="listrow_text_style" parent="WeightWidth">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="listrow_text_style_m" parent="listrow_text_style">
+        <item name="android:padding">2dp</item>
+        <item name="android:textSize">@dimen/input_textsize_m</item>
+    </style>
+
+    <style name="listrow_text_style_l" parent="listrow_text_style">
+        <item name="android:padding">5dp</item>
+        <item name="android:textSize">@dimen/input_textsize_l</item>
+    </style>
+
+    <style name="listrow_text_style_x" parent="listrow_text_style">
+        <item name="android:padding">5dp</item>
+        <item name="android:textSize">@dimen/input_textsize_x</item>
+    </style>
+
+    <style name="userinput_linlayout" parent="MatchWidth">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:weightSum">1</item>
+    </style>
+
+    <style name="userinput_linlayout_m" parent="userinput_linlayout">
+        <item name="android:layout_marginTop">2dp</item>
+    </style>
+
+    <style name="userinput_linlayout_l" parent="userinput_linlayout">
+        <item name="android:layout_marginTop">5dp</item>
+    </style>
+
+    <style name="userinput_linlayout_x" parent="userinput_linlayout">
+        <item name="android:layout_marginTop">7dp</item>
+    </style>
+
+    <style name="userinput_titletxt" parent="WeightWidth">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_weight">0.4</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="userinput_titletxt_m" parent="userinput_titletxt">
+        <item name="android:textSize">@dimen/input_textsize_m</item>
+    </style>
+
+    <style name="userinput_titletxt_l" parent="userinput_titletxt">
+        <item name="android:textSize">@dimen/input_textsize_l</item>
+    </style>
+
+    <style name="userinput_titletxt_x" parent="userinput_titletxt">
+        <item name="android:textSize">@dimen/input_textsize_x</item>
+    </style>
+
+    <style name="userinput_spinner" parent="WeightWidth">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_weight">0.6</item>
+    </style>
+
+    <style name="lin_options_style" parent="Wrap">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:weightSum">2</item>
+    </style>
+
+    <style name="img_options_style" parent="WeightWidth">
+        <item name="android:layout_weight">0.1</item>
+    </style>
+
+    <!-- style for long edittext -->
+    <style name="LargeEditText" parent="MatchWidth">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:background">@drawable/edt_bg</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    
+    <!-- style for filter spinners -->
+    <style name="filterSpinnerStyle" parent="MatchWidth">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+    </style>
+
+</resources>

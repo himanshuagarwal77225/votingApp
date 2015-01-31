@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchWidth"
+    android:orientation="vertical" >
+
+    <Spinner
+        android:id="@+id/filter_spinner1"
+        style="@style/filterSpinnerStyle" />
+
+    <Spinner
+        android:id="@+id/filter_spinner2"
+        style="@style/filterSpinnerStyle"
+        android:layout_marginTop="5dp" />
+
+</LinearLayout>

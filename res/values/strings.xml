@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">iVote</string>
+
+    <!-- Common Strings -->
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="ok">Ok</string>
+    <string name="star">*</string>
+    <string name="colon">:</string>
+    <string name="cancel">Cancel</string>
+    <string name="submit">Submit</string>
+    <string name="forthcoming">Upcoming</string>
+    <string name="elections">Elections</string>
+    <string name="continue_action">Continue</string>
+    <string name="select_default">Select %1$s</string>
+    <string name="district">District</string>
+    <string name="constituency">Constituency</string>
+
+    <!-- Messages -->
+    <string name="network_failure">Internet is not available. Could not connect to server, please try again.</string>
+    <string name="network_restored">Internet is now available.</string>
+    <string name="wait">Please wait...</string>
+    <string name="no_data">No record available</string>
+
+    <!-- Home Screen -->
+    <string name="to_b_dev">Feature to be developed soon....</string>
+
+    <!-- Registration -->
+    <string name="username_small">Username should be atleast 6 alphanumeric characters long</string>
+    <string name="pswrd_invalid">Password should be minimum 6 characters long and it must have atleast 1 numeric value</string>
+    <string name="invalid_login">Invalid login credentials</string>
+    <string name="input_invalid">Please enter a valid %1$s</string>
+    <string name="input_missing">Please enter %1$s</string>
+    <string name="result_invalid">The %1$s you specified is not valid</string>
+    <string name="reg">The %1$s you specified is not valid</string>
+    <!-- Constituency List -->
+    <string name="constituencies">Constituencies</string>
+    <!-- ElectionRegionFilers -->
+    <string name="district_missing">Please select a district</string>
+    <string name="const_missing">Please select a constituency</string>
+    <!-- PartiesList -->
+    <string name="verification_info">To cast your vote, \nPlease provide your mobile number.</string>
+    <string name="vote_info">Long press the blue voting button to cast your vote</string>
+    <string name="mob_info">e.g. 9188888888</string>
+    <string name="mob_re_enter">Re-enter your mobile no</string>
+    <string name="invalid_mo1">Please provide valid mobile number in the specified format</string>
+    <string name="invalid_mo1_1">Please add 91 before your mobile number</string>
+    <string name="invalid_mo2">Entered and re-entered mobile numbers do not match</string>
+    <string name="voting_success">Your vote has been successfully submitted</string>
+    <string name="voting_failed">Failed to submit your vote</string>
+    <string name="voting_prevented">You have already casted your vote once, so you are not authorized to vote again</string>
+    <string name="voting_prevented_state">You are out of Delhi, so you are not authorized to vote.</string>
+    <string name="no_party">No party available for the selected constituency</string>
+    <string name="voting_confirmation">Are you sure you want to elect %1$s</string>
+    <string name="polling_confirmation">Are you sure you want to poll %1$s</string>
+
+    <!-- Registration -->
+    <string name="password">Password</string>
+    <string name="first">First</string>
+    <string name="last">Last</string>
+    <string name="name">Name</string>
+    <string name="email">Email Id</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="dob">Date Of Birth</string>
+    <string name="mobile">Mobile</string>
+    <string name="voter_id">Voter Id</string>
+    <string name="pan">PAN</string>
+    <string name="card">Card</string>
+    <string name="number">Number</string>
+    <string name="no">No.</string>
+    
+      <string name="menu_title">MENU</string>
+     <string name="item_1">HOME</string>
+     <string name="item_2">VOTE</string>
+     <string name="item_3">RESULT</string>
+     <string name="item_4">OPINION</string>
+     <string name="item_5">ABOUT US</string>
+     <string name="item_6">EXIT</string>
+     
+     <string name="description">Description</string>
+
+</resources>

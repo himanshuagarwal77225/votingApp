@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Match" >
+
+    <FrameLayout
+        style="@style/MatchWidth"
+        android:layout_centerInParent="true"
+        android:layout_margin="15dp" >
+
+        <fragment
+            android:id="@+id/frag_filters"
+            style="@style/MatchWidth"
+            class="com.mxo2.votingapp.fragments.SpinnerFragment" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/action_continue"
+        style="@style/Wrap"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:background="@drawable/btn_bg"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/continue_action"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Match" >
+
+    <ImageView
+        android:id="@+id/img_logo"
+        style="@style/Wrap"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/logo_margin"
+        android:src="@drawable/logo" />
+
+    <ScrollView
+        style="@style/MatchWidth"
+        android:layout_below="@id/img_logo"
+        android:layout_centerHorizontal="true" >
+
+        <LinearLayout
+            style="@style/MatchWidth"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="15dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/input_email"
+                style="@style/LargeEditText"
+                android:layout_marginBottom="5dp"
+                android:hint="@string/email"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/input_password"
+                style="@style/LargeEditText"
+                android:hint="@string/password"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword" />
+
+            <TextView
+                android:id="@+id/login"
+                style="@style/Wrap"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_bg"
+                android:gravity="center"
+                android:text="@string/login"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/register"
+                style="@style/Wrap"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_bg"
+                android:gravity="center"
+                android:text="@string/register"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

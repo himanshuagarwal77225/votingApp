@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mxo2.votingapp.customview.CheckableRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchWidth"
+    android:background="@drawable/parties_gradient"
+    android:orientation="horizontal"
+    android:weightSum="1.1" >
+
+    <ImageView
+        android:id="@+id/img_symbol"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="left|center"
+        android:layout_margin="5dp"
+        android:scaleType="fitCenter"
+        android:layout_weight=".1"
+        android:src="@drawable/ic_launcher" />
+
+    <LinearLayout
+         style="@style/WeightWidth"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight=".6"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txt_abbr"
+            style="@style/MatchWidth"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:text="text"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/input_textsize_m" />
+
+        <TextView
+            android:id="@+id/txt_name"
+            style="@style/MatchWidth"
+            android:layout_margin="5dp"
+            android:text="text"
+            android:textColor="@color/text_input"
+            android:textSize="@dimen/input_textsize_s" />
+    </LinearLayout>
+
+    <com.mxo2.votingapp.customview.InertCheckBox
+        android:id="@+id/single_choice_selector"
+        style="@style/WeightWidth"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|right"
+        android:layout_margin="5dp"
+        android:button="@drawable/single_radio_chice"
+        android:focusable="false"
+        android:layout_weight=".4"
+        android:focusableInTouchMode="false" />
+
+    <ImageView
+        android:id="@+id/img_action_vote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="1dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:src="@drawable/img_vote_selector"
+        android:visibility="gone" />
+
+</com.mxo2.votingapp.customview.CheckableRelativeLayout>

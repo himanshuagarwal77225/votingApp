@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="alertdialogcolour">#d0ebf5</color>
+    <color name="divider_color">#C9C9C9</color>
+    <color name="darkgreen_bg">#7f9a19</color>
+    <color name="pale">#fffccf</color>
+    <color name="red">#ff0000</color>
+    <color name="transparent">#00000000</color>
+    <color name="result_view">#b0000000</color>
+    <color name="result_text">#ffffffff</color>
+    <color name="result_minor_text">#ffc0c0c0</color>
+    <color name="grey">#888888 </color>
+    <color name="heavy_brown">#663333</color>
+    <color name="surf_blue">#63D1F4</color>
+    
+    <color name="app_bg">#f2f1ed</color>
+    <color name="heading_border">#f2f1ed</color>
+    <color name="heading_bg">#f9fafc</color>
+    <color name="blue">#19bdff</color>
+    <color name="gray">#6f6f6f</color>
+    <color name="heading1">#4f3d3d</color>
+    <color name="menu_bg">#525252</color>
+    <color name="menu_seprator">#ededed</color>
+    <color name="text_dialog">#eaedf2</color>
+    <color name="text_input">#747474</color>
+
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchWidth"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/list_main"
+        style="@style/MatchWidth"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:fastScrollEnabled="true"
+        android:smoothScrollbar="true"
+        android:cacheColorHint="@android:color/transparent"
+        android:dividerHeight="0dp" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/noData_txt"
+        style="@style/MatchWidth"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/input_textsize_m"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchWidth"
+    android:orientation="horizontal" 
+    
+        android:background="@drawable/bg_listrow">
+
+    <TextView
+        android:id="@+id/item_row"
+        style="@style/MatchWidth"
+        android:gravity="left|center_vertical"
+        android:padding="10dp"
+        android:textColor="@color/text_input"
+        android:textSize="@dimen/input_textsize_m"
+        android:text="Text" />
+
+</LinearLayout>
