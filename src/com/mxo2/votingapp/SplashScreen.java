@@ -1,8 +1,17 @@
 package com.mxo2.votingapp;
 
+import java.util.List;
+
+import android.accounts.Account;
+import android.accounts.AccountManager;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.PixelFormat;
+import android.os.AsyncTask;
 import android.os.Bundle;
+import android.telephony.TelephonyManager;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.Window;
 import android.view.animation.Animation;
@@ -16,7 +25,10 @@ import com.mxo2.votingapp.utils.ParentActivity;
 import com.mxo2.votingapp.utils.TelephonyInfo;
 
 public class SplashScreen extends ParentActivity {
-
+	
+	public static String name;
+	public static String email;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -27,7 +39,31 @@ public class SplashScreen extends ParentActivity {
 		Intent services = new Intent(getApplicationContext(), MyService.class);
 		services.putExtra("name", "SurvivingwithAndroid");
 		startService(services);
+		name = getIMEI();
+		if(getAccount()!= null && !TextUtils.isEmpty(getAccount())){
+			email = getAccount();
+		}else{
+			email ="";
+		}
+		
 
+	}
+	public String getIMEI() {
+		TelephonyManager tm = (TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE);
+		String IMEINumber = tm.getDeviceId();
+		Log.i("IMEI Number is", IMEINumber);
+		return IMEINumber;
+	}
+	
+	public String getAccount() {
+		AccountManager manager = (AccountManager) getSystemService(ACCOUNT_SERVICE);
+		Account[] list = manager.getAccountsByType("com.google");
+		if (list.length != 0) {
+			String email = list[0].name;
+			return email;
+		} else {
+			return null;
+		}
 	}
 
 	private void isDualSimOrNot() {
@@ -87,5 +123,5 @@ public class SplashScreen extends ParentActivity {
 		});
 
 	}
-
+	
 }

@@ -8,5 +8,6 @@
 	<classpathentry exported="true" kind="lib" path="C:/Users/works/Documents/Android workspace/workspace/google-play-services_lib/libs/google-play-services.jar"/>
 	<classpathentry kind="src" path="/appcompat_v7"/>
 	<classpathentry exported="true" kind="lib" path="libs/nineoldandroids-2.4.0-2.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/gcm.jar"/>
 	<classpathentry kind="output" path="bin/classes"/>
 </classpath>
